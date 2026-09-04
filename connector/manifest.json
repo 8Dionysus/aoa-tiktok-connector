@@ -1,0 +1,51 @@
+{
+  "schema": "aoa_social_connector_manifest_v1",
+  "connector_id": "aoa-tiktok-connector",
+  "provider": "tiktok",
+  "display_name": "TikTok",
+  "version": "0.1.0-dev",
+  "phase": "skeleton",
+  "source_family": "social-network",
+  "runtime_owner": "abyss-stack",
+  "policy_snapshot_date": "2026-09-04",
+  "official_docs": "https://developers.tiktok.com/",
+  "planes": {
+    "evidence": {
+      "status": "planned",
+      "effect": "read_only"
+    },
+    "draft": {
+      "status": "planned",
+      "effect": "none"
+    },
+    "publication_plan": {
+      "status": "planned",
+      "effect": "none"
+    },
+    "publication_commit": {
+      "status": "disabled",
+      "effect": "external_write",
+      "requires_approval": true
+    }
+  },
+  "capabilities": {
+    "read": [
+      "authorized_profile",
+      "authorized_public_videos"
+    ],
+    "publish": [
+      "draft_upload"
+    ],
+    "deferred": [
+      "direct_post",
+      "research_api",
+      "arbitrary_public_search"
+    ]
+  },
+  "policy": {
+    "official_api_only": true,
+    "scraping_enabled": false,
+    "credentials_in_repo": false,
+    "publication_default": "disabled"
+  }
+}

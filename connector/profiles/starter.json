@@ -1,0 +1,11 @@
+{
+  "schema": "aoa_social_connector_profile_v1",
+  "profile_id": "starter",
+  "connector_id": "aoa-tiktok-connector",
+  "provider": "tiktok",
+  "mode": "offline_skeleton",
+  "account_allowlist": [],
+  "topic_allowlist": [],
+  "publication_mode": "disabled",
+  "notes": "Copy to operator-local configuration before adding account identifiers."
+}

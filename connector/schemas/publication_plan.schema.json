@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/8Dionysus/aoa-tiktok-connector/connector/schemas/publication_plan.schema.json",
+  "title": "TikTok publication plan",
+  "type": "object",
+  "required": [
+    "schema",
+    "plan_id",
+    "provider",
+    "account_ref",
+    "content_hash",
+    "requested_effect",
+    "approval_required",
+    "idempotency_key"
+  ],
+  "properties": {
+    "schema": {
+      "const": "aoa_social_publication_plan_v1"
+    },
+    "plan_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "const": "tiktok"
+    },
+    "account_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requested_effect": {
+      "type": "string",
+      "enum": [
+        "draft_upload"
+      ]
+    },
+    "approval_required": {
+      "const": true
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "draft": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

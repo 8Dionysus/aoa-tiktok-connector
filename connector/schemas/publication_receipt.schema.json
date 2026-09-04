@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/8Dionysus/aoa-tiktok-connector/connector/schemas/publication_receipt.schema.json",
+  "title": "TikTok publication receipt",
+  "type": "object",
+  "required": [
+    "schema",
+    "plan_id",
+    "attempt_id",
+    "provider",
+    "status",
+    "observed_at"
+  ],
+  "properties": {
+    "schema": {
+      "const": "aoa_social_publication_receipt_v1"
+    },
+    "plan_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "attempt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "const": "tiktok"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "prepared",
+        "submitted",
+        "processing",
+        "published",
+        "failed",
+        "unknown"
+      ]
+    },
+    "remote_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "remote_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "error": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

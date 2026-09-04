@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/8Dionysus/aoa-tiktok-connector/connector/schemas/evidence_packet.schema.json",
+  "title": "TikTok evidence packet",
+  "type": "object",
+  "required": [
+    "schema",
+    "provider",
+    "source_id",
+    "source_url",
+    "observed_at",
+    "permission_basis",
+    "payload"
+  ],
+  "properties": {
+    "schema": {
+      "const": "aoa_social_evidence_packet_v1"
+    },
+    "provider": {
+      "const": "tiktok"
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "permission_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/8Dionysus/aoa-tiktok-connector/connector/schemas/capability_manifest.schema.json",
+  "title": "TikTok connector capability manifest",
+  "type": "object",
+  "required": [
+    "schema",
+    "connector_id",
+    "provider",
+    "phase",
+    "planes",
+    "capabilities",
+    "policy"
+  ],
+  "properties": {
+    "schema": {
+      "const": "aoa_social_connector_manifest_v1"
+    },
+    "connector_id": {
+      "const": "aoa-tiktok-connector"
+    },
+    "provider": {
+      "const": "tiktok"
+    },
+    "phase": {
+      "enum": [
+        "skeleton",
+        "experimental",
+        "operational"
+      ]
+    },
+    "planes": {
+      "type": "object"
+    },
+    "capabilities": {
+      "type": "object"
+    },
+    "policy": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
