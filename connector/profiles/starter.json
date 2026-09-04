@@ -3,7 +3,7 @@
   "profile_id": "starter",
   "connector_id": "aoa-tiktok-connector",
   "provider": "tiktok",
-  "mode": "offline_skeleton",
+  "mode": "owner_read_bootstrap",
   "account_allowlist": [],
   "topic_allowlist": [],
   "publication_mode": "disabled",

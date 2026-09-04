@@ -9,10 +9,12 @@
 
 ## Phase 1 — evidence adapter
 
-- [ ] reverify official API, scopes, quotas, terms, and review path
-- [ ] add OAuth or app-auth flow using operator-local secret storage
-- [ ] implement bounded reads and normalized evidence packets
-- [ ] add synthetic fixtures and policy/negative tests
+- [x] reverify official Display API, scopes, terms, sandbox, and review path
+- [x] add strict owner-local access-token storage
+- [x] implement bounded profile/video reads and normalized evidence packets
+- [x] add synthetic policy/negative tests
+- [ ] configure Login Kit in Sandbox and complete owner OAuth
+- [ ] add local Authorization Code exchange and refresh after client credentials exist
 
 ## Phase 2 — preparation
 

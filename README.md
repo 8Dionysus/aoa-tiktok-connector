@@ -2,8 +2,10 @@
 
 Policy-gated TikTok evidence and draft-upload connector for AoA.
 
-Phase 0 is an offline, policy-first skeleton. It makes no live API calls,
-contains no credentials, and cannot publish content.
+[Privacy Policy](PRIVACY.md) · [Terms of Service](TERMS.md)
+
+Phase 1 prepares a bounded TikTok Display API read path for an authorized owner
+account. It keeps credentials outside Git and cannot publish content.
 
 ## Owned here
 
@@ -28,6 +30,12 @@ Official documentation: https://developers.tiktok.com/
 API terms, scopes, quotas, review requirements, and pricing can change. Recheck
 the official documentation before implementing or admitting a live adapter.
 
+## Connect the owner account
+
+Start in TikTok Developer Portal Sandbox, add Login Kit and Display API, and
+request only `user.info.basic` plus `video.list`. See
+[`docs/SETUP_TIKTOK.md`](docs/SETUP_TIKTOK.md).
+
 ## Bootstrap checks
 
 ```bash
@@ -38,5 +46,5 @@ pytest
 aoa-tiktok doctor --json
 ```
 
-A green bootstrap proves only the source skeleton. It does not prove API access,
-OAuth, deployment, publication, or consumer acceptance.
+A green bootstrap proves only the prepared source adapter. It does not prove a
+valid OAuth token, deployment, publication, or consumer acceptance.

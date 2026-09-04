@@ -4,10 +4,10 @@ Provider: TikTok
 
 Policy snapshot: 2026-09-04. Reverify all live conditions before adapter work.
 
-## Planned official surfaces
+## Official surfaces
 
-- read: authorized_profile
-- read: authorized_public_videos
+- read: authorized_profile (`user.info.basic`, implemented, unadmitted)
+- read: authorized_public_videos (`video.list`, implemented, unadmitted)
 - publication-plan target: draft_upload
 - deferred: direct_post
 - deferred: research_api

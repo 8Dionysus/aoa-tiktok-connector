@@ -1,6 +1,6 @@
 # Runtime Contract
 
-There is no live runtime in Phase 0.
+There is no live runtime. Phase 1 only prepares an owner-local read adapter.
 
 When admitted, abyss-stack owns deployment composition, process supervision, secret
 injection, MCP/HTTP exposure, schedules, queues, retries, and runtime health. This

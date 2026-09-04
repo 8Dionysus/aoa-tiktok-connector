@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the symmetric Phase 0 connector source surface."""
+"""Validate the symmetric TikTok connector source surface."""
 
 from __future__ import annotations
 
@@ -19,9 +19,12 @@ REQUIRED = (
     "CHANGELOG.md",
     "CHARTER.md",
     "LICENSE",
+    "PRIVACY.md",
     "README.md",
     "ROADMAP.md",
     "STATUS.md",
+    "TERMS.md",
+    "assets/app-icon.png",
     "connector/SOURCE_POLICY.md",
     "connector/STORAGE_POLICY.md",
     "connector/fixtures/README.md",
@@ -33,6 +36,7 @@ REQUIRED = (
     "connector/schemas/publication_receipt.schema.json",
     "docs/ARCHITECTURE.md",
     "docs/RUNTIME_CONTRACT.md",
+    "docs/SETUP_TIKTOK.md",
     "docs/decisions/README.md",
     "docs/decisions/AOA-TIKTOK-D-0001-independent-provider-owner.md",
     "evals/README.md",
@@ -41,7 +45,13 @@ REQUIRED = (
     "src/aoa_tiktok_connector/__init__.py",
     "src/aoa_tiktok_connector/__main__.py",
     "src/aoa_tiktok_connector/cli.py",
+    "src/aoa_tiktok_connector/client.py",
+    "src/aoa_tiktok_connector/config.py",
+    "src/aoa_tiktok_connector/evidence.py",
     "tests/test_cli.py",
+    "tests/test_client.py",
+    "tests/test_config.py",
+    "tests/test_evidence.py",
 )
 FORBIDDEN_NAMES = {".env", "client_secret.json", "credentials.json", "token.json"}
 FORBIDDEN_SUFFIXES = {".mp4", ".mov", ".mkv", ".webm", ".zip", ".sqlite", ".db"}

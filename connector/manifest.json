@@ -3,15 +3,15 @@
   "connector_id": "aoa-tiktok-connector",
   "provider": "tiktok",
   "display_name": "TikTok",
-  "version": "0.1.0-dev",
-  "phase": "skeleton",
+  "version": "0.2.0-dev",
+  "phase": "experimental",
   "source_family": "social-network",
   "runtime_owner": "abyss-stack",
   "policy_snapshot_date": "2026-09-04",
   "official_docs": "https://developers.tiktok.com/",
   "planes": {
     "evidence": {
-      "status": "planned",
+      "status": "implemented_unadmitted",
       "effect": "read_only"
     },
     "draft": {
