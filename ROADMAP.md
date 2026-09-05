@@ -27,3 +27,15 @@
 - [ ] compose in abyss-stack and prove an ordinary consumer path
 
 Cross-platform orchestration remains a separate future owner.
+
+## Evidence and measurement admission
+
+This source package supplies no eval verdicts or live metrics. Test results
+remain test evidence, not automatically admitted proof. When these surfaces
+become real, evals should cover policy denial, evidence provenance,
+normalization, media validation, idempotency, and publication-plan safety.
+Runtime measurements must distinguish requests, authorized and denied
+reads, cost/quota use, prepared plans, approved submissions, processing
+outcomes, publication outcomes, and consumer-observed acceptance. Add
+content-bearing owner surfaces when that work is admitted; empty placeholder
+districts are not required beforehand.
