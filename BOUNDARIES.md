@@ -2,9 +2,9 @@
 
 ## Plane split
 
-| Plane | Phase 0 state | Effect |
+| Plane | Current state | Effect |
 | --- | --- | --- |
-| Evidence discovery/read | planned | read-only |
+| Evidence discovery/read | implemented, unadmitted | read-only |
 | Draft preparation | planned | no external effect |
 | Publication plan | planned | no external effect |
 | Publication commit | disabled | external write, approval required |

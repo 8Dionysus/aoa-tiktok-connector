@@ -1,12 +1,12 @@
 # Status
 
-- Stage: Phase 0 skeleton
+- Stage: Phase 1 source prepared
 - Source validation: available
-- Official API adapter: not implemented
-- Credentials/OAuth: not configured
+- Official Display API adapter: implemented, not live-admitted
+- Credentials/OAuth: awaiting Developer Portal app and sandbox authorization
 - Live MCP/HTTP runtime: not deployed
-- Evidence ingestion: not operational
+- Evidence ingestion: bounded authorized-profile path prepared, not live-proven
 - Draft preparation: not operational
 - Publication: disabled
 
-This repository is a working foundation, not a live connector.
+This repository is a prepared source adapter, not a live connector.
